@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<title>Горизонт — поддержка</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<header>
+  <span class="brand">Горизонт</span>
+  <h1>Поддержка</h1>
+  <p class="muted">Планировщик для iPhone: проекты и задачи как звёздная карта.</p>
+  <nav class="lang"><a href="#ru">Русский</a><a href="#en">English</a></nav>
+  <nav class="pages"><a href="privacy/">Политика конфиденциальности · Privacy Policy</a></nav>
+</header>
+
+<section class="lang-block" id="ru" lang="ru">
+<h2>Что это за приложение</h2>
+<p>«Горизонт» — планировщик, в котором проекты становятся созвездиями, задачи — звёздами, а зависимости — линиями между ними. Время уходит вдаль, направления расходятся в стороны, высота показывает уровень задачи. Есть и привычные списки проектов и задач и лента изменений с пояснениями.</p>
+<p>Приложение бесплатное, без рекламы и без сбора данных. Интерфейс — на русском языке.</p>
+
+<h2>Как связаться</h2>
+<p>Пишите на <a href="mailto:__EMAIL__">__EMAIL__</a>. Опишите, что произошло, модель iPhone и версию приложения (Профиль → «О приложении»).</p>
+
+<h2>Частые вопросы</h2>
+
+<h3>Где хранятся мои данные?</h3>
+<p>По умолчанию — только на вашем телефоне, без регистрации и интернета. Они попадают в резервную копию iCloud или компьютера по вашим настройкам iOS. По желанию можно подключить собственную облачную базу Supabase: тогда данные хранятся в вашем проекте и видны с любого устройства, где вы вошли. Разработчик ваших данных не видит — подробнее в <a href="privacy/">политике конфиденциальности</a>.</p>
+
+<h3>Как перенести данные в облачную базу?</h3>
+<ol>
+  <li>Профиль → «Экспортировать» — сохраните файл экспорта (например, в «Файлы»).</li>
+  <li>Заведите бесплатный проект на supabase.com и установите в него схему «Горизонта» — пошаговая инструкция есть в приложении на экране подключения облачной базы.</li>
+  <li>Профиль → «Сменить хранилище» → «В своей облачной базе», подключите базу и зарегистрируйтесь в ней.</li>
+  <li>Профиль → «Импортировать» и выберите сохранённый файл. Импорт возможен только в пустое хранилище; перенесётся всё, включая ленту изменений.</li>
+</ol>
+<p>Обратно — так же: экспорт из облачной базы, смена хранилища на «На этом телефоне», импорт.</p>
+
+<h3>Как удалить данные?</h3>
+<p><strong>На телефоне:</strong> удалите приложение — данные удалятся вместе с ним. Если вы подключались к облачной базе, сначала выйдите из учётной записи (Профиль → «Выйти»): данные входа хранятся в Keychain iOS и иначе могут пережить удаление приложения. Адрес и публичный ключ базы там остаются — при повторной установке ими предзаполнится подключение.</p>
+<p><strong>В облачной базе:</strong> учётная запись удаляется в вашем проекте Supabase (Authentication → Users), данные — вместе с проектом или в редакторе таблиц.</p>
+
+<h3>Работает ли приложение без интернета?</h3>
+<p>С базой на телефоне — полностью. С облачной базой без сети можно смотреть последние загруженные данные; менять их — когда сеть вернётся.</p>
+</section>
+
+<section class="lang-block" id="en" lang="en">
+<h2>About the app</h2>
+<p>Gorizont (Горизонт) is a planner that turns your projects into constellations, tasks into stars and dependencies into lines between them. Time runs into the distance, directions spread to the sides, and height shows a task's level. Familiar project and task lists and an activity feed with notes are included too.</p>
+<p>The app is free, has no ads and collects no data. The interface is in Russian.</p>
+
+<h2>Contact</h2>
+<p>Email <a href="mailto:__EMAIL__">__EMAIL__</a>. Please describe what happened, your iPhone model and the app version (Profile → About).</p>
+
+<h2>FAQ</h2>
+
+<h3>Where is my data stored?</h3>
+<p>By default, only on your phone — no sign-up, no internet. It is included in iCloud or computer backups according to your iOS settings. Optionally, you can connect your own Supabase cloud database: your data is then stored in your project and available on every device where you sign in. The developer cannot see your data — see the <a href="privacy/#en">privacy policy</a>.</p>
+
+<h3>How do I move my data to a cloud database?</h3>
+<ol>
+  <li>Profile → Export — save the export file (for example, to Files).</li>
+  <li>Create a free project at supabase.com and install the Gorizont schema into it — the app has step-by-step instructions on the cloud connection screen.</li>
+  <li>Profile → Change storage → your own cloud database; connect it and sign up there.</li>
+  <li>Profile → Import and pick the saved file. Import works only into empty storage; everything moves over, including the activity feed.</li>
+</ol>
+<p>To move back, do the same in reverse: export from the cloud, switch storage to “on this phone”, import.</p>
+
+<h3>How do I delete my data?</h3>
+<p><strong>On the phone:</strong> delete the app and its data goes with it. If you have used a cloud database, sign out first (Profile → Sign out): your sign-in session is kept in the iOS Keychain and could otherwise survive deleting the app. The database address and public key stay there and prefill the connection if you reinstall.</p>
+<p><strong>In the cloud database:</strong> delete the account in your Supabase project (Authentication → Users), and the data together with the project or in the table editor.</p>
+
+<h3>Does the app work offline?</h3>
+<p>With on-phone storage — fully. With a cloud database you can view the most recently loaded data offline; changes resume when you are back online.</p>
+</section>
+
+<footer>© 2026 Ринат Рашитов</footer>
+</main>
+</body>
+</html>
